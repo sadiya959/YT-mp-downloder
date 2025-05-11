@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  font-family: "Roboto", sans-serif;
+  color: #f1f1f1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  height: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 3.125rem;
+  height: 1.875rem;
+  margin: 0 -0.4rem;
+  object-fit: contain;
+}
+
+.logo span {
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  gap: 1rem;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+}
+
+.search input {
+  flex: 1;
+  border: 1px solid hsl(0, 0%, 18.82%);
+  background-color: transparent;
+  width: 90%;
+  height: 2.5rem;
+  padding: 0.4rem;
+  border-radius: 999px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #f1f1f1;
+  background-color: transparent;
+}
+
+.search input:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.search button {
+  background-color: hsla(0, 0%, 100%, 0.08);
+  width: 4rem;
+  height: 2.5rem;
+  border: 1px solid hsl(0, 0%, 18.82%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 999px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+}
+
+.center .bi-mic-fill {
+  width: 2.8rem;
+  height: 2.3rem;
+  background-color: hsla(0, 0%, 100%, 0.08);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.left .create {
+  background-color: hsla(0, 0%, 100%, 0.08);
+  width: 5rem;
+  height: 1.9rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 999px;
+  gap: 0.2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.left .create .bi-plus {
+  font-size: 1.3rem;
+}
+
+.left .create span {
+  font-size: 0.8rem;
+}
+
+.left img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.bell {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem;
+  color: #f1f1f1;
+  font-family: "Roboto", sans-serif;
+}
+
+.video {
+  cursor: pointer;
+}
+
+.video img {
+  border-radius: 15px;
+}
+
+.video-info h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.375rem;
+}
+
+.video-info h3 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: rgb(66.67% 66.67% 66.67%);
+}
+.video-info span {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: rgb(66.67% 66.67% 66.67%);
+}
+
+.video-info {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.channel-image {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.modal-content{
+  position: relative;
+  margin: 5% auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+
+.close-modal{
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.875rem;
+  color: #f1f1f1;
+  border-radius: 50%;
+  background-color: #0f0f0f;
+  padding: 0 0.625rem;
+}
+
+#download-mp3{
+  background-color: #e62117;
+  color: white;
+  padding:  0.6rem 2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 20px auto;
+  display: block;
+}
+
+#video-player{
+width: 100%;
+height: 450px;
+}
+
+
+
+@media (max-width: 768px) {
+  .center {
+    width: 20%;
+  }
+
+  .search input {
+    display: none;
+  }
+
+  .search button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-radius: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  .center .bi-mic-fill {
+    background-color: transparent;
+  }
+
+  .videos {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YT mp downloder</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.svg" alt="youtube logo" />
+        <span>YouTube</span>
+      </div>
+      <div class="center">
+       <form class="search" id="search-form">
+          <input type="search" name="search" id="search" placeholder="Search" />
+          <button type="submit" class="icons"><i class="bi bi-search"></i></button>
+       </form>
+        <i class="bi bi-mic-fill"></i>
+      </div>
+      <div class="left">
+        <div class="create">
+          <i class="bi bi-plus"></i>
+          <span>Create</span>
+        </div>
+        <div class="bell">
+          <i class="bi bi-bell"></i>
+        </div>
+        <img
+          class="profile"
+          src="https://yt3.ggpht.com/ytc/AIdro_mGCcO77qRAILeeq23h9y6AoVb-S6jhNjs55xh4H1JqzRtYoueMFrSC8S9Y7lZhzF6Tww=s88-c-k-c0x00ffffff-no-rj"
+          alt="user image"
+        />
+      </div>
+    </header>
+
+    <div class="videos">  
+    </div>
+
+
+    <div id="video-modal" class="modal">
+      <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <iframe id="video-player" frameborder="0"></iframe>
+      <button id="download-mp3">Download as MP3</button>
+    </div>
+    </div>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
