@@ -22,7 +22,7 @@ A simple web app that allows users to download audio (MP3) from YouTube videos b
 
 ## 📸 Screenshot
 
-![App Screenshot](./screenshot.png)
+![App Screenshot](./images/screenshot.png)
 
 
 
